@@ -1,15 +1,14 @@
 {
   "name": "1-report-repair",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
+  "private": true,
+  "dependencies": {
+    "@types/node": "^14.14.10",
     "typescript": "^4.1.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "prod": "tsc && node ./build/main.js"
+  }
 }
